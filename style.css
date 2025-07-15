@@ -6,3 +6,96 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background-color: #FF00A5;
+}
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 140px;
+    position: relative;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0a25;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+}
+.calculator-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+#result{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid #FF00A5;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding: 35px 0;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    white-space: nowrap;
+}
+#result::-webkit-scrollbar{
+    height: 8px;
+}
+#result::-webkit-scrollbar-track{
+    background-color: #2A263C;
+    border-radius: 10px;
+}
+#result::-webkit-scrollbar-thumb{
+    background-color: #FF00A5;
+    border-radius: 10px;
+}
+.icons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    bottom: 15px;
+}
+.icons button{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.line1{
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.line2{
+    display: grid;
+    grid-template-columns: 55px 120px 55px;
+    column-gap: 10px;
+}
+.line1 button, .line2 button, .icons button{
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A263C;
+}
+.line1 .operator, .line2 .operator{
+    color: white;
+    background-color: #FF3BA4;
+}
+.icons button{
+    background-color: #FF00A5;
+}
